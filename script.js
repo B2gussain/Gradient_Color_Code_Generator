@@ -10,8 +10,10 @@ let btn_lt=document.getElementById("btn_l_t");
 let btn_lb=document.getElementById("btn_l_b");
 let main=document.querySelector(".gradientbox");
 let code=document.querySelector(".codebox");
-let rgb1="#0047df";
-let rgb2="#ec0082";
+let gg_color=document.querySelector(".gg_color");
+
+let rgb1="#ffa601";
+let rgb2="#f7de51";
   const color=()=>{
     let hex_value="0123456789abcdef"
     let colorcat="#"
@@ -27,10 +29,9 @@ const button1=()=>{
 rgb1=color();
 console.log(rgb1);
 main.style.background= `linear-gradient(to right, ${rgb1} ,${rgb2})`;
+gg_color.style.background= `linear-gradient(to right, ${rgb1} ,${rgb2})`;
 btn1.innerHTML=rgb1;
 code.innerHTML =`background:linear-gradient(to right,${rgb1}, ${rgb2})`;
-btn1.style.borderColor=`${rgb1}`;
-btn1.style.color=`${rgb1}`;
 
 }
 
@@ -38,18 +39,18 @@ const button2=()=>{
 rgb2=color();
     console.log(rgb2);
     main.style.background= `linear-gradient(to right, ${rgb1} ,${rgb2})`;
+    gg_color.style.background= `linear-gradient(to right, ${rgb1} ,${rgb2})`;
     btn2.innerHTML=rgb2;
     code.innerHTML =`background:linear-gradient(to right,${rgb1}, ${rgb2})`;
-    btn2.style.borderColor=`${rgb2}`;
-btn2.style.color=`${rgb2}`;
 }
 
 btn1.addEventListener("click",button1);
 btn2.addEventListener("click",button2);
  const left=()=>{
     main.style.background= `linear-gradient(to left, ${rgb1} ,${rgb2})`;
+    gg_color.style.background= `linear-gradient(to left, ${rgb1} ,${rgb2})`;
     code.innerHTML =`background:linear-gradient(to left,${rgb1}, ${rgb2})`;
-    btn_left.style.backgroundColor=`transparent`;
+    btn_left.style.backgroundColor=`black`;
     btn_left.style.borderColor=`white`;
     btn_left.style.color=`white`;
     btn_right.style.backgroundColor=`white`;
@@ -79,8 +80,9 @@ btn2.addEventListener("click",button2);
 
  const right=()=>{
     main.style.background= `linear-gradient(to right, ${rgb1} ,${rgb2})`;
+    gg_color.style.background= `linear-gradient(to right, ${rgb1} ,${rgb2})`;
     code.innerHTML =`background:linear-gradient(to right,${rgb1}, ${rgb2})`;
-    btn_right.style.backgroundColor=`transparent`;
+    btn_right.style.backgroundColor=`black`;
     btn_right.style.borderColor=`white`;
     btn_right.style.color=`white`;
     btn_left.style.backgroundColor=`white`;
@@ -111,8 +113,9 @@ btn2.addEventListener("click",button2);
 
  const bottom=()=>{
     main.style.background= `linear-gradient(to bottom, ${rgb1} ,${rgb2})`;
+    gg_color.style.background= `linear-gradient(to bottom, ${rgb1} ,${rgb2})`;
     code.innerHTML =`background:linear-gradient(to bottom,${rgb1}, ${rgb2})`;
-    btn_down.style.backgroundColor=`transparent`;
+    btn_down.style.backgroundColor=`black`;
     btn_down.style.borderColor=`white`;
     btn_down.style.color=`white`;
     btn_left.style.backgroundColor=`white`;
@@ -142,8 +145,9 @@ btn2.addEventListener("click",button2);
 
  const up=()=>{
     main.style.background= `linear-gradient(to top, ${rgb1} ,${rgb2})`;
+    gg_color.style.background= `linear-gradient(to top, ${rgb1} ,${rgb2})`;
     code.innerHTML =`background:linear-gradient(to top,${rgb1}, ${rgb2})`;
-    btn_up.style.backgroundColor=`transparent`;
+    btn_up.style.backgroundColor=`black`;
     btn_up.style.borderColor=`white`;
     btn_up.style.color=`white`;
     btn_left.style.backgroundColor=`white`;
@@ -173,8 +177,9 @@ btn2.addEventListener("click",button2);
 
  const lt=()=>{
     main.style.background= `linear-gradient(to left top, ${rgb1} ,${rgb2})`;
+    gg_color.style.background= `linear-gradient(to left top, ${rgb1} ,${rgb2})`;
     code.innerHTML =`background:linear-gradient(to left top,${rgb1}, ${rgb2})`;
-    btn_lt.style.backgroundColor=`transparent`;
+    btn_lt.style.backgroundColor=`black`;
     btn_lt.style.borderColor=`white`;
     btn_lt.style.color=`white`;
     btn_left.style.backgroundColor=`white`;
@@ -204,8 +209,9 @@ btn2.addEventListener("click",button2);
 
  const lb=()=>{
     main.style.background= `linear-gradient(to left bottom, ${rgb1} ,${rgb2})`;
+    gg_color.style.background= `linear-gradient(to left bottom, ${rgb1} ,${rgb2})`;
     code.innerHTML =`background:linear-gradient(to left bottom,${rgb1}, ${rgb2})`;
-    btn_lb.style.backgroundColor=`transparent`;
+    btn_lb.style.backgroundColor=`black`;
     btn_lb.style.borderColor=`white`;
     btn_lb.style.color=`white`;
     btn_left.style.backgroundColor=`white`;
@@ -235,8 +241,9 @@ btn2.addEventListener("click",button2);
 
  const rt=()=>{
     main.style.background= `linear-gradient(to right top, ${rgb1} ,${rgb2})`;
+    gg_color.style.background= `linear-gradient(to right top, ${rgb1} ,${rgb2})`;
     code.innerHTML =`background:linear-gradient(to right top,${rgb1}, ${rgb2})`;
-    btn_rt.style.backgroundColor=`transparent`;
+    btn_rt.style.backgroundColor=`black`;
     btn_rt.style.borderColor=`white`;
     btn_rt.style.color=`white`;
     btn_left.style.backgroundColor=`white`;
@@ -266,8 +273,9 @@ btn2.addEventListener("click",button2);
 
  const rb=()=>{
     main.style.background= `linear-gradient(to right bottom, ${rgb1} ,${rgb2})`;
+    gg_color.style.background= `linear-gradient(to right bottom, ${rgb1} ,${rgb2})`;
     code.innerHTML =`background:linear-gradient(to right bottom,${rgb1}, ${rgb2})`;
-    btn_rb.style.backgroundColor=`transparent`;
+    btn_rb.style.backgroundColor=`black`;
     btn_rb.style.borderColor=`white`;
     btn_rb.style.color=`white`;
     btn_left.style.backgroundColor=`white`;
