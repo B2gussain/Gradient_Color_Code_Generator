@@ -4,7 +4,7 @@
     scrollbar-width: none;
 }
 body{
-    height: 100%;
+    height: 100vh;
     width: 100vw;
     place-items: center;
     flex-direction: column;
@@ -93,7 +93,7 @@ h2{
     -webkit-border-radius: 10e;
 }
 .directions{
-    margin-bottom: 2em;
+/*     margin-bottom: 2em; */
 }
 #btn_right,#btn_left,#btn_up,#btn_down,#btn_r_t,#btn_r_b,#btn_l_t,#btn_l_b{
     height: 60px;
